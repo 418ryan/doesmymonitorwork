@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DoesMyMonitorWork</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00FF00;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-size: 4em;
+      flex-direction: column;
+    }
+    .dot {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    .footer {
+      font-size: 0.5em;
+      color: #444;
+      position: absolute;
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Yes<span class="dot">.</span>
+  </div>
+  <div class="footer">
+    If you see this, your monitor works!
+  </div>
+</body>
+</html>
